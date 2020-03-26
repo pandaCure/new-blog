@@ -1,0 +1,8 @@
+config
+node_modules
+public
+scripts
+yarn.lock
+.gitignore
+.prettierignore
+tsconfig.json
