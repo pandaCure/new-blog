@@ -4,8 +4,8 @@
 
 ## 项目初始化需要准备的配置
 
-- [ x ] eslint + prettier + git hooks
-- [ ] CHAGELOG + commit eslint
+- [x] eslint + prettier + git hooks
+- [x] CHAGELOG + commit eslint
 - [ ] .travis.yml 部署服务器
 - [ ] redux/react-router/axios...
 
