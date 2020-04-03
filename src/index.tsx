@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+import { sendAddNumStartAction } from './store/types/add'
+import App from './screen/App'
 import * as serviceWorker from './serviceWorker'
-
 ReactDOM.render(
   <React.StrictMode>
-    <div />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )
