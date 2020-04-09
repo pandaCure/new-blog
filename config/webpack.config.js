@@ -122,8 +122,20 @@ module.exports = function(webpackEnv) {
           options: {
             sourceMap: true,
           },
-        }
+        },
       );
+    }
+    if (preProcessor === 'sass-loader') {
+      loaders.push(
+        { loader: require.resolve('sass-resources-loader'),
+          options: {
+            sourceMap: true,
+            resources: [
+              path.resolve(__dirname, '../src/styles/global.scss')
+            ]
+          }
+        }
+      )
     }
     return loaders;
   };
@@ -298,6 +310,13 @@ module.exports = function(webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        '@utils': path.resolve(__dirname, '../src/utils'),
+        '@components': path.resolve(__dirname, '../src/components'),
+        '@asserts': path.resolve(__dirname, '../src/asserts'),
+        'types': path.resolve(__dirname, '../src/types'),
+        '@router': path.resolve(__dirname, '../src/router'),
+        '@screen': path.resolve(__dirname, '../src/screen'),
+        '@constants': path.resolve(__dirname, '../src/constants'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
