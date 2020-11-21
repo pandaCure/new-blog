@@ -165,6 +165,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
+    "commitizen": "^4.2.2",
     "conventional-changelog-cli": "^2.0.31",
     "cz-conventional-changelog": "3.1.0",
     "eslint-config-alloy": "^3.6.0",
@@ -176,7 +177,6 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
