@@ -6,7 +6,7 @@ import styles from './header.module.scss'
 import { headerList } from '@constants/header'
 import { routePath } from '@constants/router'
 import { svgSprite } from '@constants/asserts'
-import svgIcons from '@asserts/images/header/zhongyao-blog-svg-icons.svg'
+import svgIcons from '@assets/images/header/zhongyao-blog-svg-icons.svg'
 const navKeys = Object.keys(headerList)
 const Header = () => {
   const [userScroll, setUserScroll] = useState(false)

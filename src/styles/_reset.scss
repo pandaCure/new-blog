@@ -6,7 +6,6 @@ applet,
 object,
 iframe,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -125,4 +124,7 @@ table {
 a {
   text-decoration: none;
   outline: none;
+}
+html {
+  line-height: 1.15;
 }

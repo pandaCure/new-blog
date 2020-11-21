@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import Home from '@screen/Home/index.tsx'
+import Home from '@screen/Home/home.tsx'
 import { IRoutesType } from 'types/routerConfigTypes'
 const NotFount = lazy(() => import('@components/NotFound'))
 const routerConfig: IRoutesType = [

@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 export interface IChangePageTitle {
-  title: string
+  title?: string
 }
 const ChangePageTitle = (props: IChangePageTitle) => {
   const title = props.title
@@ -11,5 +11,4 @@ const ChangePageTitle = (props: IChangePageTitle) => {
     </Helmet>
   )
 }
-URL
 export default ChangePageTitle
